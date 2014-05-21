@@ -322,7 +322,7 @@
     randX = arc4random() % 4;
     randY = arc4random() % 3;
     
-    while ((currX = randX) && (currY = randY)) {
+    while ((currX == randX) && (currY == randY)) {
       randX = arc4random() % 4;
       randY = arc4random() % 3;
     }
