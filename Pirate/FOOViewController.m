@@ -430,11 +430,11 @@
 
     UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Death Message" message:@"You have died please restart the game!" delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles: nil];
     [alertView show];
-    return;
+    [self resetGame];
   }  else if (tile.boss != nil && tile.boss.health <= 0){
     UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Victory message" message:@"You have defeated the evil pirate boss!" delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles: nil];
     [alertView show];
-    return;
+    [self resetGame];
   }
   
   [self updateDamage];
@@ -462,6 +462,12 @@
     self.character.damage = self.character.damage - randHitPoints;
     [self updateDamage];
   }
+}
+
+-(void)resetGame {
+  self.character = nil;
+  self.boss      = nil;
+  [self viewDidLoad];
 }
 
 @end
