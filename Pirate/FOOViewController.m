@@ -467,6 +467,7 @@
 -(void)resetGame {
   self.character = nil;
   self.boss      = nil;
+  self.lblContraband.text = @"";
   [self viewDidLoad];
 }
 
