@@ -17,7 +17,7 @@
 //   proof of concept functionality (and a bit of humor).  Game is not         //
 //   bullet-proof and there are plenty of ways to improve it (if time and      //
 //   interest ever permits, which is not very likely).  A previous version     //
-//   was more built to spec (more or less) and has functionality that can be   //
+//   was closer to spec (more or less) and has functionality that can be       //
 //   added here (reset code, etc).                                             //
 //                                                                             //
 // To do:                                                                      //
