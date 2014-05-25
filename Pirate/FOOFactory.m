@@ -81,7 +81,7 @@
   //                                                               //
   ///////////////////////////////////////////////////////////////////
   
-  tile08.boss       = [currBoss createBoss:@"DCMA" withHealth:80];
+  tile08.boss       = [currBoss createBoss:@"DMCA" withHealth:80];
   
   tile01.armor      = [currArmor createArmor:@"Anonymity" withHealth:100];
   tile04.armor      = [currArmor createArmor:@"Harvey Specter" withHealth:65];
